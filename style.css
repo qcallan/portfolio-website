@@ -1,5 +1,6 @@
 :root {
-  --paper: #f4f1e9;
+  --paper: #008000;
+  <!--f41e9-->
   --paper-deep: #ece9df;
   --ink: #252321;
   --muted: #777570;
@@ -17,7 +18,7 @@ button { font: inherit; }
 .page-width { width: min(var(--page), calc(100% - 56px)); margin-inline: auto; }
 .site-header { position: sticky; z-index: 10; top: 0; background: rgba(244,241,233,.96); backdrop-filter: blur(12px); }
 .nav { height: 82px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); }
-.wordmark { font-size: 1px; line-height: 1; letter-spacing: -.08em; font-weight: 850; }
+.wordmark { font-size: 22px; line-height: 1; letter-spacing: -.08em; font-weight: 850; }
 .nav-links { display: flex; align-items: center; gap: 33px; font-size: 13px; }
 .nav-links a:hover, .footer a:hover { color: var(--maroon); }
 .menu-toggle { display: none; background: none; border: 0; color: var(--ink); font-size: 22px; }
