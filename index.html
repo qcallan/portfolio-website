@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quinn Callan's engineering portfolio: projects, coursework, and what I'm learning by building.">
+  <title>Quinn Callan — Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav page-width" aria-label="Main navigation">
+      <a class="wordmark" href="#top" aria-label="Quinn Callan home">QC.</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#journey">Coursework</a>
+        <a href="#contact">Connect <span aria-hidden="true">↗</span></a>
+      </div>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero page-width">
+      <div class="hero-copy">
+        <p class="eyebrow">Engineering portfolio <span>/</span> In progress</p>
+        <h1>Learning by<br><em>building.</em></h1>
+        <p class="hero-intro">I’m Quinn, an ESET student at Texas A&amp;M University with a mathematics minor. I’m exploring how code, circuits, and curiosity become working systems.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-light" href="#about">Meet Quinn <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="hero-note"><span class="status-dot"></span> A growing collection of ideas, experiments, and projects</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustration of a microchip connected to a circuit board">
+        <svg class="circuit-graphic" viewBox="0 0 440 440" aria-hidden="true">
+          <defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.25" fill="#9aa08a" opacity=".55"/></pattern></defs>
+          <rect width="440" height="440" fill="#eceee5"/><rect width="440" height="440" fill="url(#dots)"/>
+          <g fill="none" stroke="#a1a895" stroke-width="2">
+            <path d="M36 111h92v63h62M34 257h85v-37h71M48 344h104v-38h39M404 92h-88v64h-57M404 247h-82v-34h-63M386 361h-92v-48h-38M219 31v92M219 317v92"/>
+          </g>
+          <g fill="#eceee5" stroke="#8e9780" stroke-width="2"><circle cx="36" cy="111" r="5"/><circle cx="34" cy="257" r="5"/><circle cx="48" cy="344" r="5"/><circle cx="404" cy="92" r="5"/><circle cx="404" cy="247" r="5"/><circle cx="386" cy="361" r="5"/><circle cx="219" cy="31" r="5"/><circle cx="219" cy="409" r="5"/></g>
+          <g transform="translate(151 151)"><rect width="138" height="138" rx="12" fill="#552331"/><rect x="13" y="13" width="112" height="112" rx="7" fill="none" stroke="#c3a6a2" stroke-width="1.5"/>
+            <g stroke="#552331" stroke-width="7"><path d="M26-11v11m29-11v11m29-11v11m29-11v11M26 138v11m29-11v11m29-11v11m29-11v11M-11 26h11m-11 29h11m-11 29h11m-11 29h11m138-87h11m-11 29h11m-11 29h11m-11 29h11"/></g>
+            <text x="69" y="69" text-anchor="middle" fill="#f5f1e9" font-size="23" font-family="Arial, sans-serif">QC</text><text x="69" y="91" text-anchor="middle" fill="#ddc8bb" font-size="6.5" letter-spacing="1.4" font-family="monospace">BUILD · TEST · LEARN</text></g>
+          <text x="20" y="418" fill="#514544" font-size="11" letter-spacing="1.5" font-family="monospace">FIG. 01 — ALWAYS A WORK IN PROGRESS</text>
+        </svg>
+      </div>
+      <div class="credentials" aria-label="Education">
+        <div><strong>Quinn Callan</strong><span>Texas A&amp;M University</span></div>
+        <div><strong>ESET</strong><span>Electronic Systems Engineering Technology</span></div>
+        <div><strong>Mathematics</strong><span>Minor</span></div>
+      </div>
+    </section>
+
+    <section class="projects page-width section-rule" id="projects">
+      <div class="section-topline"><span class="eyebrow">01 <i>/</i> Selected work</span><span class="project-count"><b id="projectCount">01</b> documented project(s)</span></div>
+      <div class="section-heading-row"><h2>From concept to circuit.</h2></div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" data-filter="digital" aria-pressed="false">Digital systems</button>
+        <button class="filter" data-filter="template" aria-pressed="false">Template</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card" data-kind="digital">
+          <div class="project-image board-art"><img src="assets/fpga-board.jpg" alt="Digilent Zybo Z7-10 FPGA board used for the traffic light controller"></div>
+          <div class="project-content">
+            <p class="project-label">Digital systems <span>/</span> Lab project</p>
+            <h3>FPGA Traffic Light Controller</h3>
+            <p class="project-description">A sensor-responsive highway and farm-road traffic light controller, developed in Verilog with AMD Vivado and implemented on a Digilent Zybo Z7-10 FPGA board.</p>
+            <div class="tags"><span>Verilog</span><span>Finite state machines</span><span>AMD Vivado</span><span>Zybo Z7-10</span></div>
+            <button class="project-link" data-notes="traffic">View project notes ↗</button>
+          </div>
+        </article>
+        <article class="project-card" data-kind="template">
+          <div class="project-image next-build" aria-hidden="true"><div class="diamond"><span>＋ NEXT BUILD</span></div></div>
+          <div class="project-content">
+            <p class="project-label">Template <span>/</span> Template</p>
+            <h3>Your next engineering project</h3>
+            <p class="project-description">A reusable case study for your next lab, personal build, or capstone. Replace this example in the editor.</p>
+            <div class="tags"><span>Goal</span><span>Design</span><span>Testing</span></div>
+            <button class="project-link" data-notes="template">View project notes ↗</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about page-width section-rule" id="about">
+      <div class="about-main">
+        <span class="eyebrow">02 <i>/</i> The person behind the projects</span>
+        <h2>A little about me.</h2>
+        <p>I’m studying Electronic Systems Engineering Technology at Texas A&amp;M, with a minor in mathematics. I’m especially interested in embedded systems and how hardware and software work together to solve real-world problems. I’m eager to build on my experience with C, digital logic, and circuit analysis through projects involving microcontrollers, sensors, and control systems. This portfolio documents what I build, how I approach challenges, and what I learn along the way.</p>
+        <p class="quiet-note">This portfolio grows with my degree—from early lab work to the projects that bring everything together.</p>
+      </div>
+      <div class="about-facts">
+        <div><h3>Programming</h3><p>Python · C · Verilog</p></div>
+        <div><h3>Areas of study</h3><p>Digital systems · Circuit analysis · Embedded systems</p></div>
+        <div><h3>Interests</h3><p>Embedded systems · Microcontrollers · Hardware–software integration</p></div>
+        <div><h3>Community</h3><p>IEEE · IEEE-Tech</p></div>
+      </div>
+    </section>
+
+    <section class="journey page-width section-rule" id="journey">
+      <span class="eyebrow">03 <i>/</i> Learning foundations</span>
+      <h2>Coursework &amp; next chapters.</h2>
+      <p class="section-subtitle">Connecting classroom concepts to hands-on work.</p>
+      <div class="course-list">
+        <div><span>01 <i>/</i> Intro to Digital Systems Design</span><small>Coursework</small></div>
+        <div><span>02 <i>/</i> Circuit Analysis</span><small>Coursework</small></div>
+        <div><span>03 <i>/</i> Embedded Systems Development in C</span><small>Coursework</small></div>
+        <div><span>04 <i>/</i> Digital Electronics</span><small>Coursework</small></div>
+      </div>
+      <p class="quiet-note">Add new courses, lab write-ups, and capstone work as your degree progresses.</p>
+    </section>
+
+    <section class="contact page-width" id="contact">
+      <span class="eyebrow">04 <i>/</i> Connect</span>
+      <h2>Let’s build what’s next.</h2>
+      <p>Explore my background or get in touch.</p>
+      <div class="contact-actions">
+        <a href="mailto:qcallan8@gmail.com">Email Me ↗</a>
+        <button id="copyEmail">Copy Email</button>
+        <a href="https://drive.google.com/file/d/1CMXUyV1tDjo-y5rmj_LtEzakhAtrczaj/view?usp=sharing" target="_blank" rel="noopener">View resume ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer page-width"><span>© <span id="year"></span> Quinn Callan · Built to evolve.</span><a href="#top">Back to top ↑</a></footer>
+
+  <dialog id="notesDialog" class="notes-dialog">
+    <button class="dialog-close" aria-label="Close">×</button>
+    <p class="eyebrow">Project notes</p><h2 id="notesTitle"></h2><div id="notesBody"></div>
+  </dialog>
+</body>
+</html>
